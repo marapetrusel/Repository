@@ -8,7 +8,11 @@
 <body>
 	
 <h1>
-	<form:form action="http://localhost:8080/usermanagement/login" commandName="logindata" method="POST">
+	<c:url value="/login" var="myurl"/>
+	
+	<%-- <form:form action="http://localhost:8080/usermanagement/login" commandName="logindata" method="POST"> --%> 
+	
+	<form:form action="myurl" commandName="logindata" method="POST">	
 		<label for="username">Username: </label>
 		<form:input path="username"/><BR>
 		<label for="form:password">Password: </label>
