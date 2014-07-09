@@ -16,6 +16,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import com.evozon.usermanagement.HomeController;
 import com.evozon.usermanagement.model.User;
@@ -63,4 +64,12 @@ public class LoginController {
 		return "success";
 		
 	}
+	@RequestMapping(value = "/test", method = RequestMethod.GET)
+	public String fct(@RequestParam String bla, Model model)
+	{
+		model.addAttribute("bla", bla);
+		
+		return "home";
+	}
+	
 }

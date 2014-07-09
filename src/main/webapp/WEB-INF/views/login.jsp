@@ -9,8 +9,8 @@
 <h1>
 Login Page
 </h1>
-
-<form:form action= "http://localhost:8080/usermanagement/login" commandName="user" method="POST" >
+<c:url value="/login" var="myUrl"/>
+<form:form action= "${myUrl}" commandName="user" method="POST" >
 	<label for="username">
 	Username
 	</label>
