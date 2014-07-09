@@ -26,7 +26,8 @@ public class LoginController {
 	private String[] tokens = new String[]{"Razvan","Sami","Mara","Cristina","Ale"};
 //	private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
 	
-	
+
+
 	@RequestMapping(value = "/login", method = RequestMethod.GET)
 	public String view(Model model, Locale locale){
 		LoginData ld = new LoginData();
