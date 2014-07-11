@@ -42,13 +42,13 @@ public class LoginController {
 	public String loginSubmit(@ModelAttribute User user, Model model){
 		String username = user.getUsername();
 		String password = user.getPassword();
-		if(!iloginservice.compare(username, password)){
+		if(!iloginservice.verifyInput(username, password)) {
 			return "fail";
 		}
 		return "success";	
 	}
 	
-	@RequestMapping(value = "/test", method = RequestMethod.GET)
+	/*@RequestMapping(value = "/test", method = RequestMethod.GET)
 	public String fct(@RequestParam String bla, Model model) {
 		model.addAttribute("bla", bla);
 		return "home";
@@ -59,6 +59,6 @@ public class LoginController {
 		model.addAttribute("bla", str);
 		return "home";	
 	}
-	
+	*/
 	
 }

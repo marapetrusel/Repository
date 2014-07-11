@@ -5,5 +5,5 @@ import java.util.List;
 import com.evozon.usermanagement.model.User;
 
 public interface IDataAccessObject {
-	public List<User> readFromFile();
+	public List<User> readUsersFromFile();
 }
