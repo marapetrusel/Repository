@@ -4,29 +4,26 @@
 <html>
 <head>
 	<title>Login Page</title>
+	<link rel="stylesheet" type="text/css" href="resources/style.css">
 </head>
 <body>
-<h1>
-Login Page
-</h1>
 <c:url value="/login" var="myUrl"/>
+<div class= "wrapper">
 <form:form action= "${myUrl}" commandName="user" method="POST" >
 	<label for="username">
 	Username
 	</label>
+	
 	<form:input path="username"/>
-	<br>
-	<br>
+	
 	<label for="password">
 	Password
 	</label>
+	
 	<form:password path="password"/>
-	<br>
-	<input type="submit" value="Login" />
+	
+	<button class="button" type="submit"></button>  
 </form:form>
-
-
-
-
+</div>
 </body>
 </html>

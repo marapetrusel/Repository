@@ -2,11 +2,16 @@
 <%@ page session="false" %>
 <html>
 <head>
-	<title>Login Page</title>
+	<title>Success</title>
+	<%--<link rel="stylesheet" type="text/css" href="resources/style.css">--%>
 </head>
-<body>
+<body
+bgcolor="#373737"
+text="#ccc">
 <h1>
-Hello! ${user.username}
+
+<center>Welcome ${user.username} !</center>
+
 </h1>
 
 </body>
