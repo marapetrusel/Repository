@@ -1,0 +1,11 @@
+@CHARSET "ISO-8859-1";
+
+body{
+	background-image: url("paper_texture1290.jpg");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	text-align: center;
+	font-family: "Papyrus W01";
+	margin-top: 400px;
+	font-size: 40px;
+}

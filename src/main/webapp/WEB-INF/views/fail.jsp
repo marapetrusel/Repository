@@ -4,9 +4,10 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<link rel="stylesheet" type="text/css" href="resources/failview.css">
 <title>Insert title here</title>
 </head>
 <body>
-	Fail with user ${currentuser} and password ${currentpass}
+	Sorry! Please try again! :(
 </body>
 </html>

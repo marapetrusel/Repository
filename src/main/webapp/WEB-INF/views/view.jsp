@@ -1,28 +1,25 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
 <%@ page session="false" %>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
 <html>
 <head>
-	<title>Home</title>
+ <title>Login Page</title>
+ <link rel="stylesheet" type="text/css" href="resources/viewcss.css">
 </head>
 <body>
-	
-<h1>
 	<c:url value="/login" var="myurl"/>
 	
 	<%-- <form:form action="http://localhost:8080/usermanagement/login" commandName="logindata" method="POST"> --%> 
 	
-	<form:form action="myurl" commandName="logindata" method="POST">	
-		<label for="username">Username: </label>
-		<form:input path="username"/><BR>
-		<label for="form:password">Password: </label>
-		<form:password path="password"/><BR>
+	<div id="wrapper"><form:form cssClass="formclass" action="${myurl}" commandName="logindata" method="POST">	
+		<h1>LOGIN</h1>
+		<div class="formdiv">
+			<form:input class="input" path="username"/>
+			<form:password class="input" path="password"/>
+		</div>
 		
-		<input type="submit" name="Submit"/>
+		<button id="submitbutton"></button>
 		
-	</form:form>
-
-</h1>
-
+	</form:form></div>
 </body>
 </html>

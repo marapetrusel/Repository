@@ -4,10 +4,9 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<link rel="stylesheet" type="text/css" href="resources/successview.css">
-<title>Fail page</title>
+<title>Just Another View</title>
 </head>
 <body>
-	Hello, ${currentuser}! :)
+		The string is: ${stringToPrint}
 </body>
 </html>
